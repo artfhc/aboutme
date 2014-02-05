@@ -1,0 +1,274 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$fa-font-path: "/bower_components/Font-Awesome/fonts" !default;
+
+@import 'sass-bootstrap/lib/bootstrap';
+@import 'Font-awesome/scss/font-awesome.scss';
+
+@font-face {
+    font-family: 'Alfa';
+    src: url('../fonts/AlfaSlabOne-Regular.ttf') format('truetype')
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+/*    .container {
+        max-width: 730px;
+    }*/
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+
+/*    .container {
+        max-width: 80%;
+    }*/
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 900px;
+    // width: 980px;
+  }
+}
+
+
+// @font-face{
+//     font-family: Alfa;
+//     src: url(./fonts/AlfaSlabOne-Regular.ttf);
+// }
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding-top: 49px;
+}
+/*@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}*/
+section.row{
+    margin: 0px;
+}
+div.navbar.navbar-default{
+    margin: 0px;
+    padding-top:49px;
+    margin-top:-49px;
+    background-color: #ffffff;
+}
+nav.nav.list-inline{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    height: 49px;
+}
+nav.nav > li{
+    /*margin: 0px 5px;*/
+    margin: 0px 5px;
+    padding: 0px;
+    line-height: 49px;
+    height: 49px;
+    display: inline-block;
+}
+nav.nav > li.active{
+    border-bottom: 5px solid rgb(66, 139, 202);
+}
+nav.nav > li > a{
+    padding: 0px;
+}
+nav.nav li a:hover,
+nav.nav li a:focus{
+    background-color: transparent;
+}
+.banner {
+    background-color: rgb(43, 43, 43);
+    background-size: 100% 100%;
+    min-height: 100px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-bottom: 25px;
+    /*margin-top: 49px;*/
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5) inset;
+    background-image: url("../images/banner.jpg");
+}
+.banner h1 {
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+    line-height: 100px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    font-family:"Alfa";
+}
+.headerTitle{
+    float: left;
+    font-size: 20px;
+    font-family: 'Helvetica Neue';
+    line-height: 49px;
+}
+.resume{
+   /* text-align: center;*/
+}
+.resume #downloadIcon{
+    content: "";
+    font-size: 100px;
+    text-shadow: 1px 1px 1px rgb(200, 200, 200);
+    cursor:pointer;
+}
+.resume #downloadIcon:hover{
+    text-decoration: none;
+}
+h3{
+    border-bottom: 1px solid rgb(221, 221, 221)
+}
+.personalinfo{
+    margin-bottom: 30px;
+}
+i.fa{
+    text-align: "center";
+    font-size: 150px;
+}
+.cbp_tmtimeline i.fa{
+    font-size: 25px;
+    line-height: 40px;
+}
+.center{
+    text-align: center;
+    width: 100%;
+}
+.skill{
+    background: none repeat scroll 0% 0% rgb(244, 244, 245);
+    margin: 10px 2px;
+    padding: 15px 0px;
+    text-align: center;
+}
+.panel{
+    content: attr(data-type);
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: rgb(40, 43, 54);
+    color: #ffffff;
+}
+table.prolang{
+    width: 98%;
+    margin: 0 auto;
+    vertical-align: top;
+}
+h4.title{
+    padding:3px;
+}
+table.prolang td{
+    width: 50%;
+}
+table.prolang .progress{
+    width:98%;
+    margin: 0 auto;
+}
+table.prolang.table > tbody > tr > td {
+    border-top: 0px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+#footer {
+    margin-top: 20px;
+    height: 80px;
+    background: none repeat scroll 0% 0% rgb(238, 238, 238);
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(153, 153, 153);
+    border: 1px solid rgb(221, 221, 221);
+}
+.inner {
+    display: inline;
+    width: 97.549%;
+    margin: 0px 2%;
+    line-height: 80px;
+    height: 80px;
+}
+#header-padding{
+    padding-top: 40px;
+    visibility: hidden;
+}
+
+.center-block{
+    float: none;
+}
